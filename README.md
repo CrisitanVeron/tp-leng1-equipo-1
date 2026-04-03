@@ -4,5 +4,5 @@ Miembros:
 
 1. Verón Cristian
 2. Ledesma Ezequiel
-3. --Ingesar nombre
+3. Mauro Pozzi
 4. --Ingesar nombre
