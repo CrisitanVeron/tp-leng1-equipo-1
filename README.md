@@ -3,6 +3,6 @@
 Miembros: 
 
 1. Verón Cristian
-2. Ledesma Ezequiel
+2. Ledesma Barrios Ezequiel
 3. Mauro Pozzi
 4. Parise Gustavo
