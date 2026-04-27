@@ -8,7 +8,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>Patitas Unidas ONG</h1>
+            <h2>Patitas Unidas ONG</h2>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -25,19 +25,26 @@
     <main>
         <div class="main-article-container">
             <section id="inicio">
-                <h2>¡Bienvenidos a nuestro refugio!</h2>
+                <h1>¡Bienvenidos a nuestro refugio!</h1>
                 <article>
+                    <h2>Hola a todos los amantes de los canes</h2>
                     <p>En <strong>Patitas Unidas</strong>, nos dedicamos a rescatar perritos que se encuentran en situación de calle.<br>
                     Les ofrecemos salud, amor y un hogar temporal hasta que encuentren una familia adoptiva.</p>
-                    <p><span><em>"Rescatar a un perro no cambiará el mundo, pero cambiará el mundo de ese perro".</em></span></p>
-                    <img src="imagenes/perro1.png" alt="Imagen de perro">
+                    <p><em>"Rescatar a un perro no cambiará el mundo, pero cambiará el mundo de ese perro".</em></p>
+                    <img src="imagenes/perro1.png" alt="Imagen de perro" width="400" loading="lazy">
+                    <br>
+                    <video controls width="400" poster="imagenes/Capturavideo1.png">
+                        <source src="videos/videoperros1.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <p>Les dejamos este video de <em>concientización</em></p>
                     <p>Descubrí nuestros <a href="#objetivos">objetivos principales</a> a continuación.</p>
                 </article>
             </section>
 
             <section id="objetivos">
-                <h3>Nuestros Objetivos</h3>
                 <article>
+                    <h2>Nuestros Objetivos</h2>
                     <ul>
                         <li>Rescate y tránsito de animales.</li>
                         <li>Campañas de castración gratuita.</li>
@@ -45,14 +52,33 @@
                     </ul>
                 </article>
 
-                <h3>Metas a Corto Plazo</h3>
+                
                 <article>
+                    <h3>Metas a Corto Plazo</h3>
                     <ol>
                         <li>Ampliar los caniles de nuestro refugio principal.</li>
                         <li>Conseguir 20 nuevos hogares de tránsito.</li>
                         <li>Organizar una jornada de adopción masiva.</li>
                     </ol>
                 </article>
+                
+                <h3>Dejanos tu denuncia. Si conocés alguna injusticia, a nosotros nos sirve saberlo.</h3>
+                <br>
+            <form id="formulario-denuncia" action="/enviar" method="post">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email" required placeholder="Tu correo de contacto">
+                <br>
+                <label for="mensaje">Descripción del caso y ubicación</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describí lo que sucede y la dirección exacta..."></textarea>
+                <br>
+                <button type="submit">Enviar Denuncia</button>
+            </form>
             </section>
         </div>
         
@@ -65,6 +91,22 @@
                     <dt><strong>Castración</strong></dt>
                     <dd>Un método preventivo para evitar la sobrepoblación en las calles.</dd>
                 </dl>
+                <br>
+                <h3> <strong> Nuestra evolución rescatando pichichos. </strong></h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>2010</th>
+                            <th>2026</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>53</td>
+                            <td>320</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </aside>
     </main>
