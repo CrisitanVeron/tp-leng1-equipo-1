@@ -32,9 +32,25 @@
                     <h2>Sumate a nuestra causa</h2>
                     <p>Para <strong>Patitas Unidas</strong> es fundamental tu ayuda para seguir rescatando vidas.<br>
                     Cada mensaje, acercándonos, no sólo nos permite continuar con la tarea, sino que también nos acerca a una adopción exitosa.</p>
-                    <img src="imagenes/perro4.png" alt="Perro rescatado esperando contacto para adopción">
+                    <img src="imagenes/perro4.png" alt="Perro rescatado esperando contacto para adopción" width="375" loading="lazy">
                     <p>Podés consultar nuestro <a href="#horarios">horarios</a> para venir a conocer a los perritos.</p>
                 </article>
+                <h3>Contacto</h3>
+                <form id="Habla con nosotros" action="/enviar" method="post">
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" required placeholder="Tu correo de contacto">
+                    <br>
+                    <label for="mensaje">Dejanos tu consulta aqui</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribi tu consulta"></textarea>
+                    <br>
+                    <button type="submit">enviar comentario</button>
+                </form>
             </section>
 
             <div id="datos">
