@@ -23,6 +23,10 @@
     <hr>
 
     <main>
+        <audio controls loop>
+            <source src="audios/Audiopagina.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
         <div class="main-article-container">
             <section id="inicio">
                 <h1>¡Bienvenidos a nuestro refugio!</h1>
@@ -30,8 +34,14 @@
                     <h2>Hola a todos los amantes de los canes</h2>
                     <p>En <strong>Patitas Unidas</strong>, nos dedicamos a rescatar perritos que se encuentran en situación de calle.<br>
                     Les ofrecemos salud, amor y un hogar temporal hasta que encuentren una familia adoptiva.</p>
+                    
                     <p><em>"Rescatar a un perro no cambiará el mundo, pero cambiará el mundo de ese perro".</em></p>
-                    <img src="imagenes/perro1.png" alt="Imagen de perro" width="400" loading="lazy">
+                    
+                    <figure>
+                        <img src="imagenes/perro1.png" alt="Imagen de perro rescatado" width="400" loading="lazy">
+                        <figcaption>Uno de nuestros cánidos esperando una familia.</figcaption>
+                    </figure>
+
                     <br>
                     <video controls width="400" poster="imagenes/Capturavideo1.png">
                         <source src="videos/videoperros1.mp4" type="video/mp4">
@@ -52,7 +62,6 @@
                     </ul>
                 </article>
 
-                
                 <article>
                     <h3>Metas a Corto Plazo</h3>
                     <ol>
@@ -96,8 +105,8 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>2010</th>
-                            <th>2026</th>
+                            <th><time datetime="2010">2010</time></th>
+                            <th><time datetime="2026">2026</time></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -115,10 +124,13 @@
 
     <footer>
         <div class="footer-container">
-            <p>Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a></p>
-            <p>Llamanos: <a href="tel:+541199999999">011 9999-9999</a></p>
-            <p>Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-            <p><small>Patitas Unidas - TP Lenguajes de marcado y tecnologías web - 1er cuatrimestre 2026</small></p>
+            <address>
+                Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a><br>
+                Llamanos: <a href="tel:+541199999999">011 9999-9999</a><br>
+                Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </address>
+            
+            <p><small>Patitas Unidas - TP Lenguajes de marcado - <time datetime="2026-04-28">1er cuatrimestre 2026</time></small></p>
         </div>
     </footer>
 </body>
