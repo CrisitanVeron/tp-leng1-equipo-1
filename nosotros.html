@@ -25,6 +25,10 @@
     <hr>
 
     <main>
+        <audio controls loop>
+            <source src="audios/Audiopagina.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
         <div class="main-article-container">
             <section id="nosotros-principal">
                 <h1>Conocé nuestra labor</h1>
@@ -35,7 +39,10 @@
                     <p>Somos una organización sin fines de lucro nacida de la idea de compañeros de la facultad que compartían un mismo sueño: comprometernos a cambiar el mundo para los animales sin hogar.</p>
                     <p>Nuestra labor comenzó rescatando perritos en zonas vulnerables, brindándoles <em>salud</em> y dignidad desde el primer día.</p>
                     <p>Si querés conocer nuestras instalaciones, podés escribirnos a través de la página de <a href="contacto.html">Contacto</a> para agendar una visita guiada.</p>
-                    <img src="./imagenes/perro5.jpg" alt="Perrito recién adoptado mirando a cámara">
+                     <figure>
+                        <img src="imagenes/perro5.JPG" alt="Perrito recién adoptado mirando a cámara" width="400" loading="lazy">
+                        <figcaption>Uno de nuestros cachorros esperando ser adoptado.</figcaption>
+                    </figure>
                 </article>
 
                 <article>
@@ -43,7 +50,10 @@
                     <p>Buscamos reducir el maltrato animal mediante la educación y la acción directa. No solo rescatamos, sino que cambiamos la vida de las familias que adoptan.</p>
                     <p>Trabajamos codo a codo con las familias para asegurar que el vínculo con su nueva mascota sea <strong>permanente</strong> y responsable.</p>
                     <p>Podés colaborar con nuestra causa realizando una donación o simplemente difundiendo nuestras fotos de perritos en adopción.</p>
-                    <img src="./imagenes/perro6.jpg" alt="Perrito feliz corriendo en el parque" width="400" loading="lazy">
+                     <figure>
+                        <img src="imagenes/perro6.JPG" alt="Perrito feliz corriendo en el parque" width="400" loading="lazy">
+                        <figcaption>Feliz por su nueva familia.</figcaption>
+                    </figure>
                 </article>
 
                 <article id="equipo-trabajo">
@@ -96,12 +106,15 @@
 
     <hr>
 
-    <footer>
+ <footer>
         <div class="footer-container">
-            <p>Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a></p>
-            <p>Llamanos: <a href="tel:+541199999999">011 9999-9999</a></p>
-            <p>Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-            <p><small>Patitas Unidas - TP Lenguajes de marcado y tecnologías web - 1er cuatrimestre 2026</small></p>
+            <address>
+                Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a><br>
+                Llamanos: <a href="tel:+541199999999">011 9999-9999</a><br>
+                Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </address>
+            
+            <p><small>Patitas Unidas - TP Lenguajes de marcado - <time datetime="2026-05-04">1er cuatrimestre 2026</time></small></p>
         </div>
     </footer>
 </body>
