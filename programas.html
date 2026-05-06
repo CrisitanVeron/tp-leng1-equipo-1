@@ -25,6 +25,12 @@
     <hr>
 
     <main>
+        
+        <audio controls loop>
+            <source src="audios/Audiopagina.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+
         <div class="main-article-container">
             <section id="programas-principales">
                 <h1>Nuestros programas</h1>
@@ -35,7 +41,10 @@
                     <p>Hogares seguros y temporales para perritos rescatados mientras esperan una familia definitiva. Nos encargamos de todos los gastos médicos.</p>
                     <p>A familias o personas responsables que cuenten con espacio, tiempo en sus hogares, y que tengan mucho <em>amor</em> para dar.</p>
                     <p>Completando el formulario en nuestra página de <a href="contacto.html">Contacto</a> e indicando que querés ser hogar de tránsito.</p>
-                    <img src="./imagenes/perro5.jpg" alt="Perrito en hogar de tránsito esperando ser adoptado">
+                    <figure>
+                        <img src="./imagenes/perro7.png" alt="Perrito en hogar de tránsito esperando ser adoptado" width="400" loading="lazy">
+                        <figcaption>Perrito en hogar de tránsito.</figcaption>
+                    </figure>
                 </article>
 
                 <article>
@@ -43,7 +52,16 @@
                     <p>Organizamos jornadas mensuales de castraciones junto a veterinarios para controlar la población de animales en situación de calle de manera ética.</p>
                     <p>Los interesados pueden acercarse con sus mascotas, de bajos recursos y a perritos callejeros que son traídos por vecinos de la zona.</p>
                     <p>Para participar de las campañas, hay que pedir turno a través de nuestras redes sociales o llamando a nuestro número de <a href="tel:+541199999999">teléfono</a> para reservar un cupo.</p>
-                    <img src="./imagenes/perro3.png" alt="Perrito durante una campaña de castración">
+                    <figure>
+                        <img src="./imagenes/perro3.png" alt="Perrito durante una campaña de castración" width="400" loading="lazy">
+                        <figcaption>Perro en campaña de castración</figcaption>
+                    </figure>
+                    <br>
+                    <video controls width="400" poster="imagenes/Capturavideo2.jpg">
+                        <source src="videos/videoperros2.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <p>Les dejamos este video de <em>los beneficios de la castración</em></p>
                 </article>
 
                 <article id="voluntariado">
@@ -83,10 +101,13 @@
 
     <footer>
         <div class="footer-container">
-            <p>Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a></p>
-            <p>Llamanos: <a href="tel:+541199999999">011 9999-9999</a></p>
-            <p>Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-            <p><small>Patitas Unidas - TP Lenguajes de marcado y tecnologías web - 1er cuatrimestre 2026</small></p>
+            <address>
+                Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar">hola@patitasunidas.org.ar</a><br>
+                Llamanos: <a href="tel:+541199999999">011 9999-9999</a><br>
+                Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </address>
+            
+            <p><small>Patitas Unidas - TP Lenguajes de marcado - <time datetime="2026-04-28">1er cuatrimestre 2026</time></small></p>
         </div>
     </footer>
 </body>
