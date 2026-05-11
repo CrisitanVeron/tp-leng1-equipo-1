@@ -89,3 +89,23 @@ input, textarea {
     width: 100%;
 }
 
+table {
+    width: 100%;
+    margin: 1em auto;
+}
+
+th {
+    background-color: #028090;
+    color: white;
+    padding: 0.5em;
+}
+
+td {
+    padding: 0.5em;
+}
+
+footer {
+    margin-top: 2em;
+    font-size: 1.2rem;
+    color: #828090;
+}
