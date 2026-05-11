@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: #1A2B4A;
+    background-color: #d2cdd0;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #028090;
+    font-weight: bold;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.8rem; }
+
+.destacado {
+    background-color: rgba(212, 219, 116, 0.744);
+}
+
+a {
+    color: #028090;
+    text-decoration: underline;
+}
+
