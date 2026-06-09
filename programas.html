@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Patitas Unidas - Programas e Iniciativas</title>
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -25,13 +23,7 @@
 
     <hr>
 
-    <main>
-        
-        <audio controls loop>
-            <source src="audios/Audiopagina.mp3" type="audio/mpeg">
-            Tu navegador no soporta audio.
-        </audio>
-
+    <main class="grid-layout">
         <div class="main-article-container">
             <section id="programas-principales">
                 <h1 class="destacado">Nuestros programas</h1>
@@ -50,7 +42,7 @@
 
                 <article>
                     <h3>2. Campañas de Castración Gratuita</h3>
-                    <p>Organizamos jornadas mensuales de castraciones junto a veterinarios para controlar la población de animales en situación de calle de manera ética.</p>
+                    <p>Organizamos jornadas mensuales de castraciones junto a veterinarios para controlar la población de animales de manera ética.</p>
                     <p>Los interesados pueden acercarse con sus mascotas, de bajos recursos y a perritos callejeros que son traídos por vecinos de la zona.</p>
                     <p>Para participar de las campañas, hay que pedir turno a través de nuestras redes sociales o llamando a nuestro número de <a href="tel:+541199999999">teléfono</a> para reservar un cupo.</p>
                     <figure>
@@ -86,7 +78,12 @@
             </section>
         </div>
 
-        <aside>
+        <aside class="sidebar-aside">
+            <audio controls loop>
+                <source src="audios/Audiopagina.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+
             <div class="main-aside-container">
                 <h3>Requisitos para voluntarios</h3>
                 <ul>
@@ -112,5 +109,4 @@
         </div>
     </footer>
 </body>
-
 </html>

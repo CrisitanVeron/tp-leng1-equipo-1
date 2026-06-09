@@ -23,12 +23,19 @@ body {
     color: var(--color-primario);
     line-height: 1.6;
     text-align: center;
+    padding-top: 8rem;
 }
 
-#header {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
     background-color: var(--color-primario);
     color: var(--blanco);
     padding: 2rem;
+    z-index: 100; 
 }
 
 .header-container {
@@ -58,15 +65,68 @@ main ul, main ol {
     padding-left: 2rem;
 }
 
-.main-article-container, 
-.footer-container {
-    max-width: 900px;
+.grid-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+        "sidebar maincontent";
+    gap: 3rem;
+    max-width: 1200px;
     margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.main-article-container {
+    grid-area: maincontent;
+    margin: 0; 
     padding: 2.5rem;
     background-color: var(--blanco);
     border: 1px solid #ccc;
     border-radius: 8px;
     color: var(--color-primario);
+}
+
+.sidebar-aside {
+    grid-area: sidebar;
+    position: sticky;
+    top: 10rem; 
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-aside audio {
+    width: 100%;
+}
+
+.main-aside-container {
+    padding: 2rem;
+    background-color: var(--blanco);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    margin: 2rem auto;
+}
+
+figure::before {
+    content: "Adopta";
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--color-acento);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 10; 
 }
 
 h1, h2, h3 {
@@ -81,6 +141,13 @@ h1, h2, h3 {
 table {
     margin: 2rem auto;
     border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: center;
 }
 
 form {
@@ -94,6 +161,7 @@ input, textarea {
     width: 100%;
     margin-bottom: 1.5rem;
     display: block;
+    padding: 0.8rem;
 }
 
 footer {
