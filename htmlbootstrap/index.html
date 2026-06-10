@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Unidas - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-body-secondary">
+
+    <header class="bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-bold fs-4" href="index.html">🐾 Patitas Unidas ONG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-2 mt-3 mt-md-0">
+                        <li class="nav-item"><a class="nav-link text-warning fw-bold active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="programas.html">Programas</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-8">
+                <section id="inicio" class="mb-5">
+                    <h1 class="display-5 fw-bold text-success mb-4">¡Bienvenidos a nuestro refugio!</h1>
+                    
+                    <article class="card bg-light border-light-subtle shadow-sm p-4 mb-4">
+                        <h2 class="h3 text-success mb-3">Hola a todos los amantes de los canes</h2>
+                        <p>En <strong>Patitas Unidas</strong>, nos dedicamos a rescatar perritos que se encuentran en situación de calle.<br>
+                        Les ofrecemos salud, amor y un hogar temporal hasta que encuentren una familia adoptiva.</p>
+                        
+                        <p class="fst-italic text-success-emphasis border-start border-3 border-success ps-3 my-3 bg-success-subtle py-2 rounded-end">"Rescatar a un perro no cambiará el mundo, pero cambiará el mundo de ese perro".</p>
+                        
+                        <div class="row justify-content-center my-3">
+                            <div class="col-12 col-md-6 text-center">
+                                <figure class="figure">
+                                    <img src="../imagenes/perro1.png" alt="Imagen de perro rescatado" class="img-fluid rounded shadow-sm">
+                                    <figcaption class="figure-caption text-center mt-2 fw-bold text-dark">Uno de nuestros cánidos esperando una familia.</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="my-4 text-center bg-dark p-3 rounded shadow-sm mx-auto">
+                            <video controls preload="metadata" poster="../imagenes/Capturavideo1.png" class="rounded img-fluid">
+                                <source src="../videos/videoperros1.mp4" type="video/mp4">
+                                Tu navegador no soporta video HTML5.
+                            </video>
+                        </div>
+                        <p class="text-center text-muted small fst-italic">Les dejamos este video de <em>concientización</em></p>
+                        <p class="mt-3">Descubrí nuestros <a href="#objetivos" class="text-success fw-bold">objetivos principales</a> a continuación.</p>
+                    </article>
+                </section>
+
+                <section id="objetivos">
+                    <div class="card bg-light border-start border-success border-4 shadow-sm p-4 mb-4">
+                        <h2 class="h3 text-success mb-3 fw-bold">Nuestros Objetivos</h2>
+                        <ul class="list-group list-group-flush mb-4 rounded">
+                            <li class="list-group-item bg-transparent">🐾 Rescate y tránsito de animales.</li>
+                            <li class="list-group-item bg-transparent">🐾 Campañas de castración gratuita.</li>
+                            <li class="list-group-item bg-transparent">🐾 Concientización sobre la tenencia responsable.</li>
+                        </ul>
+
+                        <h3 class="h4 text-dark mb-3 fw-semibold">Metas a Corto Plazo</h3>
+                        <ol class="list-group list-group-numbered mb-4 rounded">
+                            <li class="list-group-item bg-transparent">Ampliar los caniles de nuestro refugio principal.</li>
+                            <li class="list-group-item bg-transparent">Conseguir 20 nuevos hogares de tránsito.</li>
+                            <li class="list-group-item bg-transparent">Organizar una jornada de adopción masiva.</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="card bg-danger-subtle border-danger border-top border-4 shadow-sm p-4">
+                        <h3 class="h5 mb-3 text-danger-emphasis fw-bold">Dejanos tu denuncia. Si conocés alguna injusticia, a nosotros nos sirve saberlo.</h3>
+                        <form id="formulario-denuncia" action="/enviar" method="post" class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <label for="nombre" class="form-label fw-bold small text-secondary">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label for="email" class="form-label fw-bold small text-secondary">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="Tu correo de contacto">
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label fw-bold small text-secondary">Descripción del caso y ubicación</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required placeholder="Describí lo que sucede y la dirección exacta..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-danger w-100 py-2 fw-bold text-uppercase shadow-sm">Enviar Denuncia</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <aside class="p-4 rounded shadow-sm bg-warning-subtle border border-warning-subtle h-100 d-flex flex-column">
+                    <div class="mb-4 text-center bg-white p-3 rounded shadow-sm">
+                        <label class="form-label d-block fw-bold text-success small text-uppercase mb-2">🎵 Audio de la página:</label>
+                        <audio controls loop class="w-100">
+                            <source src="../audios/Audiopagina.mp3" type="audio/mpeg">
+                            Tu navegador no soporta audio.
+                        </audio>
+                    </div>
+
+                    <div class="main-aside-container flex-grow-1">
+                        <h3 class="h5 border-bottom border-warning pb-2 mb-3 text-success-emphasis fw-bold">Conceptos Clave</h3>
+                        <dl>
+                            <dt class="text-success-emphasis">Adopción Responsable</dt>
+                            <dd class="text-dark small mb-3">Un compromiso de cuidar al animal durante toda su vida.</dd>
+                            <dt class="text-success-emphasis">Castración</dt>
+                            <dd class="text-dark small mb-3">Un método preventivo para evitar la sobrepoblación en las calles.</dd>
+                        </dl>
+                        
+                        <div class="mt-4 pt-3 border-top border-warning">
+                            <h3 class="h6 fw-bold mb-3 text-dark">Nuestra evolución rescatando pichichos.</h3>
+                            <table class="table table-sm table-bordered text-center shadow-sm">
+                                <thead class="table-success">
+                                    <tr>
+                                        <th><time datetime="2010">2010</time></th>
+                                        <th><time datetime="2026">2026</time></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-light">
+                                    <tr>
+                                        <td>53</td>
+                                        <td class="fw-bold text-success bg-warning">320</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5 border-top border-warning">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <address class="small text-muted lh-lg mb-0">
+                        Escribinos: <br><a href="mailto:hola@patitasunidas.org.ar" class="text-decoration-none text-warning fw-bold">hola@patitasunidas.org.ar</a><br>
+                        Llamanos: <a href="tel:+541199999999" class="text-decoration-none text-warning fw-bold">011 9999-9999</a>
+                    </address>
+                </div>
+                <div class="col-12 col-md-6 text-md-end mb-3 align-self-center">
+                    <address class="small mb-0">
+                        Seguinos en: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm mt-1">Instagram</a>
+                    </address>
+                </div>
+            </div>
+            <div class="text-center border-top border-secondary pt-3 mt-2">
+                <p class="text-muted small mb-0">Patitas Unidas - TP Lenguajes de marcado - <time datetime="2026-04-28">1er cuatrimestre 2026</time></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
