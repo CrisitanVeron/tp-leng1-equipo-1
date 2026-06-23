@@ -36,7 +36,7 @@ header {
     background-color: var(--color-primario);
     color: var(--blanco);
     padding: 2rem;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .header-container {
