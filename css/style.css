@@ -1,3 +1,4 @@
+/* === Variables globales === */
 :root {
     --color-fondo: #d2cdd0;
     --color-primario: #142844;
@@ -6,6 +7,7 @@
     --blanco: #ffffff;
 }
 
+/* === Reset y base === */
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +29,7 @@ body {
     padding-top: 8rem;
 }
 
+/* === Header / nav (reglas viejas, sin uso desde el navbar de Bootstrap) === */
 header {
     position: fixed;
     top: 0;
@@ -59,6 +62,7 @@ nav a {
     font-weight: bold;
 }
 
+/* === Listas y layout principal === */
 main ul, main ol {
     width: fit-content;
     margin: 2rem auto;
@@ -109,6 +113,14 @@ main ul, main ol {
     text-align: left;
 }
 
+.aside-sticky {
+    top: 10rem;
+    border-color: var(--color-acento);
+    border-width: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === Figuras e imágenes === */
 figure {
     position: relative;
     display: inline-block;
@@ -130,6 +142,7 @@ figure::before {
     z-index: 10; 
 }
 
+/* === Tipografía y tablas === */
 h1, h2, h3 {
     color: var(--color-secundario);
     margin-bottom: 1.5rem;
@@ -151,6 +164,7 @@ table th, table td {
     text-align: center;
 }
 
+/* === Formularios === */
 form {
     text-align: left;
     width: 100%;
@@ -165,6 +179,7 @@ input, textarea {
     padding: 0.8rem;
 }
 
+/* === Footer === */
 footer {
     background-color: var(--color-primario);
     color: var(--blanco);
@@ -189,4 +204,17 @@ footer a {
 
 .footer-container a {
     color: var(--color-secundario);
+}
+
+/* === Personalización del navbar de Bootstrap === */
+.navbar {
+    background-color: var(--color-primario);
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-acento);
 }
